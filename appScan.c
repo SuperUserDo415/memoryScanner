@@ -38,34 +38,6 @@ char *result;
 int key;
 // Display programs and their PIDs
 
-while((key=getch())!='q')
-{
-pout=popen("pgrep -l .","r");
-while(fgets(line, sizeof(line),pout)!=NULL)
-{
-if((key=getch())=='/')
-{
-echo();
-getnstr(sWord,sizeof(sWord)-1);
-noecho();
-
-if((result=strstr(line,sWord))!=NULL)
-{
-
-printw("%s",line);
-
-}
-}
-//printw("%s",line);
-}
-pclose(pout);
-}
-
-refresh();
-
-
-
-
 refresh();
 pclose(pout);
 endwin();
