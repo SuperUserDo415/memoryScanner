@@ -1,0 +1,22 @@
+
+Refferring to: https://www.baeldung.com/linux/read-process-memory
+
+The /proc filesystem is a virtual fs that shows information about the running processes in a directory-like structure.
+
+Proc filesystem doesnt contain actual files on it but dynamically generated files and directories that show the system's current state.
+
+Each Process on the system has directory listed by the PID of the process. ( For example if firefox's pid is 1293 then /proc/1293 will be the directory )
+
+The memory map for a process is found in /proc/PID/maps ( by catting it )
+
+Each line in this file represents a single memory region and the format of each line is:
+
+start_adress-end_address permissions offset device inode filename
+
+start,end address are in hexadecimal format and represent virtual addresses of the first and last byte of the region.
+
+Permissions-> access permissions of the memory region.
+
+offset-> offset of the memory region in the file or device that it's associated with.
+
+
