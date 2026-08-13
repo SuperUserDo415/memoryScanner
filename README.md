@@ -18,6 +18,16 @@ gcc memscan.c -o memscan.out
 ```bash
 sudo ./memscan.out [PID] [TARGET_VALUE]
 ```
+After getting the address from memscan, we can run changemem
+```bash
+gcc changemem.c -o changemem.out
+```
+Then change the data stored to whatever:
+```bash
+sudo ./changemem.out [PID] [ADDRESS] [NEW_VALUE]
+```
+Now the value is changed.
+
 
 ## TODO:
 1. Make search function
