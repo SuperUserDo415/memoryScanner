@@ -110,7 +110,12 @@ int main(int argCount,char *argVars[])
                 {
                     printf("Found %d \n", target);
                     printf("Address: %lx \n", (start + i));
-                    return 0;
+		    // Save to struct
+		    /*
+		    s->val=target;
+		    s->addr=(start+i);
+*/
+		    //return 0;
                 }
             }
         }

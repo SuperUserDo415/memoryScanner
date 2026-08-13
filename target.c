@@ -2,12 +2,14 @@
 #include <unistd.h>
 int main()
 {
-int x=1234;
+unsigned long x=4122322;
 printf("PID: %d \n ", getpid());
-printf("Value of x: %d \n",x);
+
 while(1)
 {
-sleep(10);
+scanf("%d",&x);
+printf("Value of x: %d \n",x);
+sleep(1);
 }
 return 0;
 }
