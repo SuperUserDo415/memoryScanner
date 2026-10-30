@@ -3,8 +3,6 @@ A memory scanner for linux, built in c.
 ## Setup
 
 ### Requirements
-- ncurses
-
 Clone the repository:
 ```bash
 git clone https://github.com/SuperUserDo415/memoryScanner.git
