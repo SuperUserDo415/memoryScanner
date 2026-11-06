@@ -25,12 +25,3 @@ Then change the data stored to whatever:
 sudo ./changemem.out [PID] [ADDRESS] [NEW_VALUE]
 ```
 Now the value is changed.
-
-
-## TODO:
-1. Make search function
-2. Be able to attach to programs directly from the tui
-3. Better tui
-4. Memory tables 
-5. Be able to modify memory
-
